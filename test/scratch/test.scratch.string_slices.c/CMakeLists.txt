@@ -13,6 +13,8 @@ target_compile_options(test.scratch.string_slices.c PRIVATE
 	>
 	$<$<CXX_COMPILER_ID:MSVC>:
 		/WX /W4
+
+		/wd4130
 	>
 )
 

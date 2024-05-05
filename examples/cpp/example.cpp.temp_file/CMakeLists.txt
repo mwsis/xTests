@@ -13,6 +13,8 @@ target_compile_options(example.cpp.temp_file PRIVATE
 	>
 	$<$<CXX_COMPILER_ID:MSVC>:
 		/WX /W4
+
+		/wd4459
 	>
 )
 
