@@ -14,6 +14,8 @@ target_compile_options(test.scratch.temp_directory PRIVATE
 		-Wno-unknown-warning-option # -Wno-unused-but-set-variable not recognised until Clang 13.1
 		-Wno-unused-but-set-variable
 	>
-	$<$<CXX_COMPILER_ID:MSVC>: /WX /W4>
+	$<$<CXX_COMPILER_ID:MSVC>:
+		/WX /W4
+	>
 )
 
